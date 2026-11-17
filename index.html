@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>健身房管理系统 · 演示版</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">
+    <div class="logo-mark">💪</div>
+    <span id="proj-name">健身房管理系统</span>
+  </div>
+  <div class="store-chip" id="store-chip"></div>
+  <div class="topbar-spacer"></div>
+  <div class="role-switch">
+    <span>当前视角</span>
+    <select id="role-select"></select>
+  </div>
+  <button class="icon-btn" onclick="ACTIONS['reset-data']()" title="恢复初始演示数据">↺</button>
+</div>
+
+<div class="sidebar" id="sidebar"></div>
+<div class="main" id="main"></div>
+
+<div class="mask" id="mask" onclick="if(event.target===this)closeModal()"></div>
+<div class="mask" id="drawer-mask" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer"></div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/pages.js"></script>
+<script src="assets/pages2.js"></script>
+<script src="assets/actions.js"></script>
+<script src="assets/member.js"></script>
+</body>
+</html>
